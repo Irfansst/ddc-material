@@ -1,7 +1,7 @@
 List<String> projectNames = ["project01", "project02", "project03"]
-views {
     listView("My Projects") {
     // add the three projects to the view
+        job(name)
     projectNames.each { name ->
         job(name) {
             // set the project description to be the same as the project name
@@ -17,5 +17,4 @@ views {
             }
         }
     }
-}
 }
