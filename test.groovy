@@ -1,5 +1,6 @@
 List<String> projectNames = ["project1", "project2", "project3"]
-
+listView("Release_7.0") {
+    // add the three projects to the view
 projectNames.each { name ->
     job(name) {
         description(name)
@@ -17,4 +18,5 @@ projectNames.each { name ->
         archiveArtifacts '**/*.jar'
     }
     }
+}
 }
