@@ -1,6 +1,6 @@
 List<String> projectNames = ["project01", "project02", "project03"]
-
-listView("My Projects") {
+views {
+    listView("My Projects") {
     // add the three projects to the view
     projectNames.each { name ->
         job(name) {
@@ -17,4 +17,5 @@ listView("My Projects") {
             }
         }
     }
+}
 }
